@@ -88,12 +88,12 @@ force ace_csw_handleExtraMagazinesType = 0;
 force ace_csw_progressBarTimeCoefficent = 1;
 
 // ACE Dragging
-force ace_dragging_dragAndFire = true;
+ace_dragging_dragAndFire = true;
 
 // ACE Explosives
 ace_explosives_customTimerDefault = 30;
 force ace_explosives_customTimerMax = 900;
-force ace_explosives_customTimerMin = 5;
+force ace_explosives_customTimerMin = 0;
 force ace_explosives_explodeOnDefuse = true;
 force ace_explosives_punishNonSpecialists = true;
 force ace_explosives_requireSpecialist = false;
@@ -121,14 +121,14 @@ force ace_fire_enableScreams = true;
 force ace_fortify_markObjectsOnMap = 1;
 force ace_fortify_timeCostCoefficient = 1;
 force ace_fortify_timeMin = 1.5;
-force acex_fortify_settingHint = 1;
+acex_fortify_settingHint = 1;
 
 // ACE Fragmentation Simulation
 force ace_frag_enabled = true;
 force ace_frag_maxTrack = 10;
 force ace_frag_maxTrackPerFrame = 10;
 force ace_frag_reflectionsEnabled = false;
-force ace_frag_spallEnabled = false;
+force ace_frag_spallEnabled = true;
 
 // ACE G-Forces
 force ace_gforces_coef = 0;
@@ -137,7 +137,7 @@ force ace_gforces_enabledFor = 0;
 // ACE Goggles
 ace_goggles_effects = 0;
 ace_goggles_showClearGlasses = false;
-ace_goggles_showInThirdPerson = true;
+ace_goggles_showInThirdPerson = false;
 
 // ACE Grenades
 force ace_grenades_convertExplosives = true;
@@ -159,31 +159,31 @@ force ace_hearing_unconsciousnessVolume = 0.4;
 
 // ACE Interaction
 force force ace_interaction_disableNegativeRating = true;
-force force ace_interaction_enableGroupRenaming = true;
-force force ace_interaction_enableMagazinePassing = true;
-force force ace_interaction_enableTeamManagement = true;
-force force ace_interaction_enableWeaponAttachments = true;
-force force ace_interaction_interactWithTerrainObjects = true;
+force ace_interaction_enableGroupRenaming = true;
+ace_interaction_enableMagazinePassing = true;
+force ace_interaction_enableTeamManagement = true;
+ace_interaction_enableWeaponAttachments = true;
+force ace_interaction_interactWithTerrainObjects = true;
 
 // ACE Interaction Menu
-force ace_gestures_showOnInteractionMenu = 2;
-force ace_interact_menu_actionOnKeyRelease = true;
-force ace_interact_menu_addBuildingActions = true;
+ace_gestures_showOnInteractionMenu = 2;
+ace_interact_menu_actionOnKeyRelease = true;
+ace_interact_menu_addBuildingActions = true;
 ace_interact_menu_alwaysUseCursorInteraction = true;
 ace_interact_menu_alwaysUseCursorSelfInteraction = true;
 ace_interact_menu_colorShadowMax = [0,0,0,1];
 ace_interact_menu_colorShadowMin = [0,0,0,0.25];
 ace_interact_menu_colorTextMax = [1,1,1,1];
 ace_interact_menu_colorTextMin = [1,1,1,0.25];
-force ace_interact_menu_consolidateSingleChild = false;
+ace_interact_menu_consolidateSingleChild = false;
 ace_interact_menu_cursorKeepCentered = false;
 ace_interact_menu_cursorKeepCenteredSelfInteraction = false;
-force ace_interact_menu_menuAnimationSpeed = 1;
+ace_interact_menu_menuAnimationSpeed = 1;
 ace_interact_menu_menuBackground = 0;
 ace_interact_menu_menuBackgroundSelf = 0;
 ace_interact_menu_selectorColor = [1,0,0];
-force ace_interact_menu_shadowSetting = 2;
-force ace_interact_menu_textSize = 3;
+ace_interact_menu_shadowSetting = 2;
+ace_interact_menu_textSize = 3;
 ace_interact_menu_useListMenu = true;
 ace_interact_menu_useListMenuSelf = true;
 
@@ -390,7 +390,7 @@ ace_cargo_carryAfterUnload = true;
 force ace_cargo_enable = true;
 ace_cargo_enableRename = true;
 force ace_cargo_loadTimeCoefficient = 5;
-ace_cargo_openAfterUnload = 0;
+ace_cargo_openAfterUnload = 1;
 force ace_cargo_paradropTimeCoefficent = 2.5;
 force ace_rearm_distance = 30.1118;
 force ace_rearm_level = 2;
@@ -399,7 +399,7 @@ force ace_refuel_hoseLength = 36;
 force ace_refuel_progressDuration = 2;
 force ace_refuel_rate = 1;
 force ace_repair_addSpareParts = true;
-force ace_repair_autoShutOffEngineWhenStartingRepair = false;
+force ace_repair_autoShutOffEngineWhenStartingRepair = true;
 force ace_repair_consumeItem_toolKit = 0;
 ace_repair_displayTextOnRepair = true;
 force ace_repair_engineerSetting_fullRepair = 1;
@@ -431,7 +431,7 @@ force ace_map_mapGlow = true;
 force ace_map_mapIllumination = true;
 force ace_map_mapLimitZoom = false;
 force ace_map_mapShake = true;
-force ace_map_mapShowCursorCoordinates = false;
+force ace_map_mapShowCursorCoordinates = true;
 ace_markers_moveRestriction = 0;
 ace_markers_timestampEnabled = true;
 ace_markers_timestampFormat = "HH:MM";
@@ -457,7 +457,7 @@ ace_maptools_rotateModifierKey = 1;
 // ACE Medical
 force ace_medical_ai_enabledFor = 2;
 force ace_medical_AIDamageThreshold = 1;
-force ace_medical_bleedingCoefficient = 0.450946;
+force ace_medical_bleedingCoefficient = 0.2;
 force ace_medical_blood_bloodLifetime = 180;
 force ace_medical_blood_enabledFor = 2;
 force ace_medical_blood_maxBloodObjects = 300;
@@ -555,7 +555,7 @@ ace_nametags_nametagColorRed = [1,0.67,0.67,1];
 ace_nametags_nametagColorYellow = [1,1,0.67,1];
 force ace_nametags_playerNamesMaxAlpha = 0.8;
 force ace_nametags_playerNamesViewDistance = 5;
-force ace_nametags_showCursorTagForVehicles = false;
+force ace_nametags_showCursorTagForVehicles = true;
 ace_nametags_showNamesForAI = false;
 ace_nametags_showPlayerNames = 1;
 ace_nametags_showPlayerRanks = true;
@@ -576,8 +576,8 @@ force ace_overheating_cookoffCoef = 5;
 force ace_overheating_coolingCoef = 1;
 ace_overheating_displayTextOnJam = true;
 force ace_overheating_enabled = true;
-force ace_overheating_heatCoef = 1;
-force ace_overheating_jamChanceCoef = 1;
+force ace_overheating_heatCoef = 0.75;
+force ace_overheating_jamChanceCoef = 0.75;
 force ace_overheating_overheatingDispersion = true;
 force ace_overheating_overheatingRateOfFire = true;
 force ace_overheating_particleEffectsAndDispersionDistance = 3000;
@@ -633,7 +633,7 @@ force ace_scopes_zeroReferenceTemperature = 15;
 force acex_sitting_enable = true;
 
 // ACE Spectator
-force ace_spectator_enableAI = false;
+force ace_spectator_enableAI = true;
 ace_spectator_maxFollowDistance = 5;
 force ace_spectator_restrictModes = 0;
 force ace_spectator_restrictVisions = 0;
@@ -659,15 +659,15 @@ force ace_gunbag_swapGunbagEnabled = true;
 force ace_hitreactions_minDamageToTrigger = 0.1;
 ace_inventory_inventoryDisplaySize = 0;
 force ace_laser_dispersionCount = 2;
-force ace_laser_showLaserOnMap = 1;
+force ace_laser_showLaserOnMap = 3;
 force ace_marker_flags_placeAnywhere = false;
 force ace_microdagr_mapDataAvailable = 2;
 force ace_microdagr_waypointPrecision = 3;
 force ace_noradio_enabled = true;
 ace_optionsmenu_showNewsOnMainMenu = true;
 force ace_overpressure_distanceCoefficient = 1;
-force ace_parachute_failureChance = 0.05;
-ace_parachute_hideAltimeter = true;
+force ace_parachute_failureChance = 0;
+ace_parachute_hideAltimeter = false;
 ace_tagging_quickTag = 1;
 
 // ACE User Interface
@@ -711,7 +711,7 @@ ace_ui_zeroing = true;
 
 // ACE Vehicle Lock
 force ace_vehiclelock_defaultLockpickStrength = 10;
-force ace_vehiclelock_lockVehicleInventory = false;
+force ace_vehiclelock_lockVehicleInventory = true;
 force ace_vehiclelock_vehicleStartingLockState = -1;
 
 // ACE Vehicle Medical
@@ -821,7 +821,7 @@ force bocr_main_walk = true;
 force Barotrauma_DoomMode = false;
 Barotrauma_FineSplatterEnabled = true;
 Barotrauma_FineSplatterIterations = 30;
-Barotrauma_GibsEnabled = true;
+Barotrauma_GibsEnabled = false;
 Barotrauma_GibSmearEnabled = true;
 Barotrauma_MaxGibs = 0;
 Barotrauma_MaxMajorSplatters = 32;
@@ -870,7 +870,7 @@ force cba_diagnostic_watchInfoRefreshRate = 0.2;
 cba_disposable_dropUsedLauncher = 2;
 force cba_disposable_replaceDisposableLauncher = true;
 cba_events_repetitionMode = 1;
-force cba_network_loadoutValidation = 0;
+force cba_network_loadoutValidation = 2;
 cba_optics_usePipOptics = true;
 cba_ui_notifyLifetime = 4;
 cba_ui_StorePasswords = 1;
@@ -1053,7 +1053,7 @@ force grad_trenches_functions_bigEnvelopeDigTime = 40;
 force grad_trenches_functions_bigEnvelopeRemovalTime = -1;
 force grad_trenches_functions_buildFatigueFactor = 0;
 force grad_trenches_functions_camouflageRequireEntrenchmentTool = false;
-force grad_trenches_functions_createTrenchMarker = false;
+force grad_trenches_functions_createTrenchMarker = true;
 force grad_trenches_functions_decayTime = 1800;
 force grad_trenches_functions_giantEnvelopeDamageMultiplier = 1;
 force grad_trenches_functions_giantEnvelopeDigTime = 90;
@@ -1084,7 +1084,7 @@ force KPR_airPoints = 32;
 force KPR_avhPoints = 12;
 force KPR_infPoints = 4;
 force KPR_killedPenalty = 8;
-force KPR_levelAnnounce = true;
+force KPR_levelAnnounce = false;
 force KPR_levelDebug = false;
 force KPR_levelSystem = false;
 force KPR_lvhPoints = 8;
@@ -1172,7 +1172,7 @@ force niarms_magSwitch = true;
 force simplecraters_setting_allowGroundTextures = true;
 force force simplecraters_setting_allowSmallExplosions = false;
 force force simplecraters_setting_craterScale = 1;
-force force simplecraters_setting_debugMode = false;
+force simplecraters_setting_debugMode = false;
 
 // TFAR - Clientside settings
 force TFAR_curatorCamEars = true;
@@ -1267,11 +1267,11 @@ force RECOIL_randomMax_on = 1.4;
 force RECOIL_randomMid_on = 1.1;
 force RECOIL_randomMin_on = -1;
 force RECOIL_Smooth_on = true;
-force RR_mapStuff_enableCompassAnimations = false;
+RR_mapStuff_enableCompassAnimations = false;
 force SWAY_incrase_on = 1;
 tsb_suicide = false;
 tsb_suppression = true;
-force force tsp_cba_animate_door = true;
+force tsp_cba_animate_door = false;
 force tsp_cba_animate_map = false;
 force tsp_cba_animate_nvg = false;
 force tsp_cba_animate_Paper = true;
@@ -1367,7 +1367,7 @@ force tsp_cba_breach_wall_velocity = "[0,0,-0.5]";
 force tsp_cba_melee = true;
 force tsp_cba_melee_damageModifier = 1;
 force tsp_cba_melee_moveset = true;
-tsp_cba_melee_movesetPoll = 0.25;
+force tsp_cba_melee_movesetPoll = 0.25;
 
 // Zeus Enhanced
 zen_camera_adaptiveSpeed = true;
@@ -1375,7 +1375,7 @@ zen_camera_defaultSpeedCoef = 1;
 zen_camera_fastSpeedCoef = 1;
 zen_camera_followTerrain = true;
 force zen_common_ascensionMessages = false;
-force zen_common_autoAddObjects = false;
+force zen_common_autoAddObjects = true;
 force zen_common_cameraBird = false;
 zen_common_darkMode = false;
 zen_common_disableGearAnim = false;
