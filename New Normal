@@ -565,8 +565,8 @@ ace_vehicles_speedLimiterStep = 5;
 force ace_viewports_enabled = true;
 
 // ACE View Distance Limiter
-force ace_viewdistance_enabled = true;
-force ace_viewdistance_limitViewDistance = 12000;
+ace_viewdistance_enabled = true;
+ace_viewdistance_limitViewDistance = 12000;
 ace_viewdistance_objectViewDistanceCoeff = 6;
 ace_viewdistance_viewDistanceAirVehicle = 10000;
 ace_viewdistance_viewDistanceLandVehicle = 6000;
@@ -625,9 +625,9 @@ Barotrauma_FineSplatterEnabled = false;
 Barotrauma_FineSplatterIterations = 4;
 Barotrauma_GibsEnabled = false;
 Barotrauma_GibSmearEnabled = false;
-force Barotrauma_MaxGibs = 8;
-force Barotrauma_MaxMajorSplatters = 15;
-force Barotrauma_MaxMinorSplatters = 60;
+Barotrauma_MaxGibs = 8;
+Barotrauma_MaxMajorSplatters = 15;
+Barotrauma_MaxMinorSplatters = 60;
 force Barotrauma_VaporizationDamageThreshold = 1;
 
 // BettIR
