@@ -2,7 +2,7 @@
 force A3TI_ACE_JAVELIN = false;
 force A3TI_ALLOW_TANK_DRIVER = false;
 force A3TI_ALLOW_VANILLA_TI = true;
-force A3TI_ENABLE_ZEUS = true;
+force A3TI_ENABLE_ZEUS = false;
 force A3TI_HD_VISION_FIGHTER = true;
 force A3TI_HD_VISION_LANDVEH = true;
 force A3TI_HD_VISION_SHIP = true;
@@ -345,7 +345,7 @@ force ace_medical_treatment_treatmentTimeSplint = 7;
 force ace_medical_treatment_treatmentTimeTourniquet = 7;
 force ace_medical_treatment_woundReopenChance = 0;
 force ace_medical_treatment_woundStitchTime = 5;
-force ace_medical_vitals_simulateSpO2 = true;
+force ace_medical_vitals_simulateSpO2 = false;
 
 // ACE Medical Interface
 ace_medical_feedback_bloodVolumeEffectType = 2;
@@ -681,6 +681,9 @@ force crowsza_zeus_text_CBA_Setting_zeusTextLine1 = true;
 force crowsza_zeus_text_CBA_Setting_zeusTextLine2 = true;
 force crowsza_zeus_text_CBA_Setting_zeusTextLine3 = true;
 
+// CUP
+force CUP_Vehicles_PreventBarrelClip = false;
+
 // DUI - Squad Radar - Indicators
 force diwako_dui_indicators_crew_range_enabled = false;
 diwako_dui_indicators_fov_scale = false;
@@ -1005,6 +1008,31 @@ Fat_Lurch_ShowEl = true;
 Fat_Lurch_ShowNorth = true;
 Fat_Lurch_ShowTarget = true;
 
+// Weather PLUS
+force WP_DIS = true;
+force WP_DustDevil = true;
+force WP_DustStorm = true;
+force WP_FallingStar = true;
+force WP_FallingStarRemove = true;
+force WP_lowFog = true;
+force WP_Meteor = true;
+force WP_MeteorSmall = true;
+force WP_MeteorStorm = true;
+force WP_MeteorStormRemove = true;
+force WP_Monsoon = true;
+force WP_Mountainfog = true;
+force WP_PlayerFog = true;
+force WP_RockSlide = true;
+force WP_SnowFall = true;
+force WP_SnowFallRemove = true;
+force WP_SnowStorm = true;
+force WP_ThunderStorm = true;
+force WP_Tornado = true;
+force WP_TornadoRemove = true;
+force WP_Volcano = true;
+force WP_VolcanoRemove = true;
+force WP_WindGust = true;
+
 // Zeus Enhanced
 zen_area_markers_editableMarkers = 0;
 zen_building_markers_enabled = false;
@@ -1097,6 +1125,7 @@ zen_faction_filter_0_Athena_OPF_T_F = true;
 zen_faction_filter_0_Atlas_OPF_T_F = true;
 zen_faction_filter_0_Atlas_OPF_V_wdl_F = true;
 zen_faction_filter_0_Atlas_OPF_W_F = true;
+zen_faction_filter_0_EdCat_GO_CSAT_Arctic = true;
 zen_faction_filter_0_OPF_A_F = true;
 zen_faction_filter_0_OPF_CD_F = true;
 zen_faction_filter_0_OPF_F = true;
@@ -1116,6 +1145,7 @@ zen_faction_filter_0_Revolucion_OPF_FASR_F = true;
 zen_faction_filter_0_Revolucion_OPF_FRR_F = true;
 zen_faction_filter_0_Revolucion_OPF_PNB_F = true;
 zen_faction_filter_0_Revolucion_OPF_VZ_F = true;
+zen_faction_filter_0_TSB_Generic_R = true;
 zen_faction_filter_0_vtf_kf_O_KS = true;
 zen_faction_filter_1_Athena_BLU_G_F = true;
 zen_faction_filter_1_Atlas_BLU_A_ard_F = true;
@@ -1141,6 +1171,7 @@ zen_faction_filter_1_BLU_T_F = true;
 zen_faction_filter_1_BLU_TURA_lxWS = true;
 zen_faction_filter_1_BLU_UN_lxWS = true;
 zen_faction_filter_1_BLU_W_F = true;
+zen_faction_filter_1_EdCat_GO_NATO_Arctic = true;
 zen_faction_filter_1_Opf_BLU_P_F = true;
 zen_faction_filter_1_PUP_UMD_USMC = true;
 zen_faction_filter_1_PUP_UMW_USMC = true;
@@ -1148,6 +1179,7 @@ zen_faction_filter_1_Revolucion_BLU_BDF_F = true;
 zen_faction_filter_1_Revolucion_BLU_CTRG_F = true;
 zen_faction_filter_1_Revolucion_BLU_FRR_F = true;
 zen_faction_filter_1_Revolucion_BLU_PNB_F = true;
+zen_faction_filter_1_TSB_Generic_B = true;
 zen_faction_filter_1_vtf_kf_B_KDF = true;
 zen_faction_filter_1_vtf_kf_B_KFL = true;
 zen_faction_filter_2_Atlas_IND_I_F = true;
@@ -1165,6 +1197,7 @@ zen_faction_filter_2_IND_TURA_lxWS = true;
 zen_faction_filter_2_Opf_IND_I_F = true;
 zen_faction_filter_2_Revolucion_IND_CDB_F = true;
 zen_faction_filter_2_Revolucion_IND_FRR_F = true;
+zen_faction_filter_2_TSB_Generic_G = true;
 zen_faction_filter_2_vtf_kf_I_KAL = true;
 zen_faction_filter_3_CIV_F = true;
 zen_faction_filter_3_CIV_IDAP_F = true;
