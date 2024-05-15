@@ -384,7 +384,7 @@ ace_medical_gui_peekMedicalOnHitDuration = 1;
 ace_medical_gui_showBleeding = 2;
 force ace_medical_gui_showBloodlossEntry = true;
 ace_medical_gui_showDamageEntry = false;
-ace_medical_gui_tourniquetWarning = true;
+force ace_medical_gui_tourniquetWarning = true;
 
 // ACE Name Tags
 force ace_nametags_ambientBrightnessAffectViewDist = 1;
