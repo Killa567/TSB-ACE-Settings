@@ -534,7 +534,7 @@ force ace_medical_painUnconsciousThreshold = 0.5;
 force ace_medical_playerDamageThreshold = 5;
 force ace_medical_spontaneousWakeUpChance = 0.95;
 force ace_medical_spontaneousWakeUpEpinephrineBoost = 20;
-force force ace_medical_statemachine_AIUnconsciousness = false;
+force ace_medical_statemachine_AIUnconsciousness = false;
 force ace_medical_statemachine_cardiacArrestBleedoutEnabled = true;
 force ace_medical_statemachine_cardiacArrestTime = 300;
 force ace_medical_statemachine_fatalInjuriesAI = 0;
@@ -581,7 +581,7 @@ force ace_medical_treatment_treatmentTimeSplint = 7;
 force ace_medical_treatment_treatmentTimeTourniquet = 7;
 force ace_medical_treatment_woundReopenChance = 0;
 force ace_medical_treatment_woundStitchTime = 5;
-force ace_medical_vitals_simulateSpO2 = false;
+force force ace_medical_vitals_simulateSpO2 = false;
 
 // ACE Medical Interface
 ace_medical_feedback_bloodVolumeEffectType = 2;
@@ -1477,7 +1477,7 @@ uk3cb_preferedOpticHighMag = 0;
 // Zeus Enhanced
 force zen_area_markers_editableMarkers = 0;
 zen_building_markers_enabled = false;
-force force zen_camera_adaptiveSpeed = true;
+zen_camera_adaptiveSpeed = true;
 zen_camera_defaultSpeedCoef = 1;
 zen_camera_fastSpeedCoef = 1;
 zen_camera_followTerrain = true;
