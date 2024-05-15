@@ -494,9 +494,9 @@ ace_markers_TimestampUTCMinutesOffset = 0;
 force ace_markers_timestampUTCOffset = 0;
 
 // ACE Map Gestures
-ace_map_gestures_allowCurator = true;
-ace_map_gestures_allowSpectator = true;
-ace_map_gestures_briefingMode = 0;
+force ace_map_gestures_allowCurator = true;
+force ace_map_gestures_allowSpectator = true;
+force ace_map_gestures_briefingMode = 0;
 ace_map_gestures_defaultColor = [1,0.88,0,0.7];
 ace_map_gestures_defaultLeadColor = [1,0.88,0,0.95];
 force ace_map_gestures_enabled = true;
@@ -930,15 +930,15 @@ force cba_diagnostic_watchInfoRefreshRate = 0.2;
 cba_disposable_dropUsedLauncher = 2;
 force cba_disposable_replaceDisposableLauncher = true;
 cba_events_repetitionMode = 1;
-force cba_network_loadoutValidation = 0;
+force cba_network_loadoutValidation = 2;
 cba_optics_usePipOptics = true;
 cba_ui_notifyLifetime = 4;
 cba_ui_StorePasswords = 1;
 
 // Crows Electronic Warfare
 force crowsEW_spectrum_defaultClassForJammingSignal = "UGV_01_base_F,UGV_02_Base_F,UAV_01_base_F,UAV_02_base_F,UAV_03_base_F,UAV_04_base_F,UAV_05_Base_F,UAV_06_base_F";
-crowsEW_spectrum_minJamSigStrength = -40;
-crowsEW_spectrum_selfTracking = false;
+force crowsEW_spectrum_minJamSigStrength = -40;
+force crowsEW_spectrum_selfTracking = false;
 crowsEW_spectrum_spectrumAutoline = true;
 crowsEW_spectrum_spectrumAutolineColor1 = 2;
 crowsEW_spectrum_spectrumAutolineColor2 = 7;
@@ -946,8 +946,8 @@ crowsEW_spectrum_spectrumAutolineColor3 = 8;
 crowsEW_spectrum_spectrumAutolineColor4 = 5;
 crowsEW_spectrum_spectrumAutolineLength = 6000;
 crowsEW_spectrum_spectrumAutolineNoise = 0;
-crowsEW_spectrum_spectrumEnable = true;
-crowsEW_spectrum_tfarSideTrack = false;
+force crowsEW_spectrum_spectrumEnable = true;
+force crowsEW_spectrum_tfarSideTrack = false;
 
 // Crows Zeus Additions
 crowsza_pingbox_CBA_Setting_enabled = true;
@@ -977,11 +977,11 @@ diwako_dui_indicators_style = "standard";
 diwako_dui_indicators_useACENametagsRange = true;
 
 // DUI - Squad Radar - Main
-diwako_dui_ace_hide_interaction = true;
+diwako_dui_ace_hide_interaction = false;
 diwako_dui_colors = "standard";
 diwako_dui_font = "RobotoCondensed";
 diwako_dui_icon_style = "standard";
-diwako_dui_main_hide_dialog = true;
+diwako_dui_main_hide_dialog = false;
 diwako_dui_main_hide_ui_by_default = false;
 diwako_dui_main_squadBlue = [0,0,1,1];
 diwako_dui_main_squadGreen = [0,1,0,1];
@@ -1082,7 +1082,7 @@ force dzn_WHC_ClasslistSetting = "GroundWeaponHolder, WeaponHolderSimulated";
 force dzn_WHC_Enabled = true;
 
 // Enhanced Movement Rework
-force emr_main_allowClimbOnStandingUnits = false;
+force emr_main_allowClimbOnStandingUnits = true;
 force emr_main_allowMidairClimbing = true;
 force emr_main_animSpeedCoef = 1;
 force emr_main_animSpeedStaminaCoef = 0.4;
@@ -1116,14 +1116,14 @@ force emr_main_whitelistStr = "";
 force emr_main_yeetCoefficient = 1.4;
 
 // Freestyle's Nukes
-FSN_AI_Nuke_Bias = "STANDARD";
-FSN_AI_Nuke_maxColleteral = 10;
-FSN_AI_Nuke_maxFriendly = 10;
-FSN_AI_Nuke_maxRatioColleteralEnemy = 1;
-FSN_AI_Nuke_maxRatioFriendlyEnemy = 1;
-FSN_AI_Nuke_minEnemy = 10;
-FSN_AI_Nuke_NonEnemyEnemy = 1;
-FSN_AI_Nuke_order = 0;
+force FSN_AI_Nuke_Bias = "STANDARD";
+force FSN_AI_Nuke_maxColleteral = 10;
+force FSN_AI_Nuke_maxFriendly = 10;
+force FSN_AI_Nuke_maxRatioColleteralEnemy = 1;
+force FSN_AI_Nuke_maxRatioFriendlyEnemy = 1;
+force FSN_AI_Nuke_minEnemy = 10;
+force FSN_AI_Nuke_NonEnemyEnemy = 1;
+force FSN_AI_Nuke_order = 0;
 force FSN_Auto_Nuking = false;
 force FSN_Debug = false;
 force FSN_Fallout = true;
@@ -1171,7 +1171,7 @@ force grad_trenches_functions_vehicleTrenchBuildSpeed = 5;
 
 // Illuminate The Night
 gjb_itn_setting_cantingMods = "gjb_itn_cantMode";
-gjb_itn_setting_debug = false;
+force gjb_itn_setting_debug = false;
 gjb_itn_setting_drawDist = 1000;
 gjb_itn_setting_genericInterface = false;
 gjb_itn_setting_hijackHeadlights = true;
