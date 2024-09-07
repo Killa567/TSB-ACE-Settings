@@ -56,6 +56,10 @@ ace_arsenal_loadoutsSaveFace = false;
 ace_arsenal_loadoutsSaveInsignia = true;
 ace_arsenal_loadoutsSaveVoice = false;
 
+// ACE Arsenal Extended
+aceax_setting_01 = 2;
+aceax_setting_02 = [0.3,0.8,0.2,1];
+
 // ACE Artillery
 force ace_artillerytables_advancedCorrections = false;
 force ace_artillerytables_disableArtilleryComputer = false;
@@ -173,7 +177,7 @@ force acex_headless_log = false;
 force acex_headless_transferLoadout = 0;
 
 // ACE Hearing
-force ace_hearing_autoAddEarplugsToUnits = false;
+force ace_hearing_autoAddEarplugsToUnits = 2;
 ace_hearing_disableEarRinging = false;
 force ace_hearing_earplugsVolume = 0.5;
 force ace_hearing_enableCombatDeafness = true;
@@ -385,6 +389,15 @@ ace_medical_gui_showBleeding = 2;
 force ace_medical_gui_showBloodlossEntry = true;
 ace_medical_gui_showDamageEntry = false;
 force ace_medical_gui_tourniquetWarning = true;
+
+// ACE Medical Pharmacy
+force aceP_circulation_factorDrugs = 1;
+force aceP_circulation_IOestablish = 7;
+force aceP_circulation_IVdrop = 600;
+force aceP_circulation_IVdropEnable = true;
+force aceP_circulation_IVestablish = 7;
+force aceP_circulation_IVmedic = 1;
+force aceP_circulation_PushTime = 7;
 
 // ACE Name Tags
 force ace_nametags_ambientBrightnessAffectViewDist = 1;
@@ -639,6 +652,54 @@ force ace_zeus_revealMines = 0;
 force ace_zeus_zeusAscension = false;
 force ace_zeus_zeusBird = false;
 
+// ACRE2
+force force acre_sys_core_automaticAntennaDirection = true;
+acre_sys_core_defaultRadioVolume = 0.8;
+force force acre_sys_core_fullDuplex = true;
+acre_sys_core_godVolume = 1;
+force force acre_sys_core_ignoreAntennaDirection = true;
+force force acre_sys_core_interference = true;
+acre_sys_core_postmixGlobalVolume = 1;
+acre_sys_core_premixGlobalVolume = 1;
+force acre_sys_core_revealToAI = 1;
+acre_sys_core_spectatorVolume = 1;
+force force acre_sys_core_terrainLoss = 0.1;
+force force acre_sys_core_ts3ChannelName = "ACRE";
+force force acre_sys_core_ts3ChannelPassword = "123";
+acre_sys_core_ts3ChannelSwitch = true;
+acre_sys_core_unmuteClients = true;
+force acre_sys_radio_defaultRadio = "ACRE_PRC152";
+force force acre_sys_signal_signalModel = 2;
+
+// ACRE2 Gestures
+acre_sys_gestures_enabled = true;
+acre_sys_gestures_stopADS = false;
+
+// ACRE2 UI
+acre_sys_godmode_rxNotification = true;
+acre_sys_godmode_rxNotificationColor = [0.8,0.8,0.8,1];
+acre_sys_godmode_txNotification = true;
+acre_sys_godmode_txNotificationCurrentChatColor = [0.8,0.8,0.8,1];
+acre_sys_godmode_txNotificationGroup1Color = [0.8,0.8,0.8,1];
+acre_sys_godmode_txNotificationGroup2Color = [0.8,0.8,0.8,1];
+acre_sys_godmode_txNotificationGroup3Color = [0.8,0.8,0.8,1];
+acre_sys_gui_volumeColorScale = [[1,1,0,0.5],[1,0.83,0,0.5],[1,0.65,0,0.5],[1,0.44,0,0.5],[1,0,0,0.5]];
+acre_sys_list_CycleRadiosColor = [0.66,0.05,1,1];
+acre_sys_list_DefaultPTTColor = [1,0.8,0,1];
+acre_sys_list_HintBackgroundColor = [0,0,0,0.8];
+acre_sys_list_HintTextFont = "RobotoCondensed";
+acre_sys_list_LanguageColor = [1,0.29,0.16,1];
+acre_sys_list_PTT1Color = [1,0.8,0,1];
+acre_sys_list_PTT2Color = [1,0.8,0,1];
+acre_sys_list_PTT3Color = [1,0.8,0,1];
+acre_sys_list_SwitchChannelColor = [0.66,0.05,1,1];
+acre_sys_list_ToggleHeadsetColor = [0.66,0.05,1,1];
+
+// ACRE2 Zeus
+acre_sys_zeus_zeusCanSpectate = true;
+acre_sys_zeus_zeusCommunicateViaCamera = true;
+acre_sys_zeus_zeusDefaultVoiceSource = false;
+
 // Backpack On Chest
 force bocr_main_disabled = false;
 force bocr_main_walk = true;
@@ -673,6 +734,8 @@ force crowsza_pingbox_CBA_Setting_enabled = true;
 force crowsza_pingbox_CBA_Setting_fade_duration = 300;
 force crowsza_pingbox_CBA_Setting_fade_enabled = true;
 force crowsza_pingbox_CBA_Setting_oldLimit = 600;
+force crowsza_zeus_text_CBA_Setting_OnKilledModule_helper = true;
+force crowsza_zeus_text_CBA_Setting_OnKilledModule_helper_color = [1,1,1,1];
 force crowsza_zeus_text_CBA_Setting_rc_helper = true;
 force crowsza_zeus_text_CBA_Setting_rc_helper_color = [1,1,1,1];
 force crowsza_zeus_text_CBA_Setting_surrender_helper = true;
@@ -821,6 +884,45 @@ force emr_main_staminaCoefficient = 1;
 force emr_main_whitelistStr = "";
 force emr_main_yeetCoefficient = 1.4;
 
+// Fire support PLUS
+force FSPLUS_105mmTrainingShell = true;
+force FSPLUS_122Rocket = true;
+force FSPLUS_122RocketBarrage = true;
+force FSPLUS_155Barrage = true;
+force FSPLUS_230HE = true;
+force FSPLUS_230HEBarrage = true;
+force FSPLUS_230mmAP = true;
+force FSPLUS_230mmFletchette = true;
+force FSPLUS_230mmHeatSeeking = true;
+force FSPLUS_230mmMine = true;
+force FSPLUS_230mmTrainingRocket = true;
+force FSPLUS_82mmTrainingShell = true;
+force FSPLUS_82MortarBarrage = true;
+force FSPLUS_Big_Nuke = true;
+force FSPLUS_CruiseMissile = true;
+force FSPLUS_Fireworks = true;
+force FSPLUS_JDAM = true;
+force FSPLUS_Napalm = true;
+force FSPLUS_Not230mmBarrage = true;
+force FSPLUS_RodsfromGod = true;
+force FSPLUS_Smoke_white = true;
+
+// Fire support PLUS (Freestyle's Nuclear Blast)
+force force FSNB_AllowWeapons = false;
+force FSNB_BlastWave = true;
+force FSNB_CondensationRing = true;
+force FSNB_Crater = true;
+force FSNB_Debug = false;
+force FSNB_DirectRad = true;
+force FSNB_DustWave = true;
+force FSNB_Fireball = true;
+force FSNB_Fires = 0.1;
+force FSNB_LingerSmoke = true;
+force FSNB_MushroomCloud = true;
+force FSNB_SmokeSpike = true;
+force FSNB_Sound = true;
+force FSNB_StaticRad = -1;
+
 // GRAD Trenches
 force grad_trenches_functions_allowBigEnvelope = true;
 force grad_trenches_functions_allowCamouflage = true;
@@ -907,92 +1009,7 @@ force lambs_main_radioGuer = 400;
 force lambs_main_radioShout = 100;
 force lambs_main_radioWest = 400;
 
-// TFAR - Clientside settings
-force TFAR_curatorCamEars = true;
-TFAR_default_radioVolume = 7;
-TFAR_intercomDucking = 0.2;
-TFAR_intercomVolume = 0.1;
-TFAR_moveWhileTabbedOut = false;
-TFAR_noAutomoveSpectator = false;
-TFAR_oldVolumeHint = false;
-TFAR_pluginTimeout = 4;
-TFAR_PosUpdateMode = 0.1;
-TFAR_showChannelChangedHint = true;
-TFAR_ShowDiaryRecord = true;
-TFAR_showTransmittingHint = true;
-TFAR_ShowVolumeHUD = false;
-TFAR_splendidCamEars = false;
-TFAR_tangentReleaseDelay = 0;
-TFAR_VolumeHudTransparency = 0;
-TFAR_volumeModifier_forceSpeech = false;
-
-// TFAR - Global settings
-force TFAR_AICanHearPlayer = true;
-force TFAR_AICanHearSpeaker = true;
-force TFAR_allowDebugging = false;
-force tfar_core_noTSNotConnectedHint = false;
-force TFAR_defaultIntercomSlot = 0;
-TFAR_disableAutoMute = false;
-force TFAR_enableIntercom = true;
-force TFAR_experimentalVehicleIsolation = true;
-force TFAR_externalIntercomEnable = 0;
-force TFAR_externalIntercomMaxRange_Phone = 5;
-force TFAR_externalIntercomMaxRange_Wireless = 15;
-force TFAR_fullDuplex = true;
-force TFAR_giveLongRangeRadioToGroupLeaders = false;
-force TFAR_giveMicroDagrToSoldier = false;
-force TFAR_givePersonalRadioToRegularSoldier = false;
-force TFAR_globalRadioRangeCoef = 1;
-force TFAR_instantiate_instantiateAtBriefing = false;
-force TFAR_objectInterceptionEnabled = true;
-force TFAR_objectInterceptionStrength = 400;
-force tfar_radiocode_east = "_opfor";
-force tfar_radiocode_independent = "_independent";
-force tfar_radiocode_west = "_bluefor";
-force tfar_radioCodesDisabled = true;
-force TFAR_SameLRFrequenciesForSide = true;
-force TFAR_SameSRFrequenciesForSide = true;
-force TFAR_setting_defaultFrequencies_lr_east = "50,55,59";
-force TFAR_setting_defaultFrequencies_lr_independent = "50,55,59";
-force TFAR_setting_defaultFrequencies_lr_west = "50,55,59";
-force TFAR_setting_defaultFrequencies_sr_east = "60,70,80,90,100,110,120,50";
-force TFAR_setting_defaultFrequencies_sr_independent = "60,70,80,90,100,110,120,50";
-force TFAR_setting_defaultFrequencies_sr_west = "60,70,80,90,100,110,120,50";
-force TFAR_setting_DefaultRadio_Airborne_east = "TFAR_mr6000l";
-force TFAR_setting_DefaultRadio_Airborne_Independent = "TFAR_anarc164";
-force TFAR_setting_DefaultRadio_Airborne_West = "TFAR_anarc210";
-force TFAR_setting_DefaultRadio_Backpack_east = "TFAR_mr3000";
-force TFAR_setting_DefaultRadio_Backpack_Independent = "TFAR_anprc155";
-force TFAR_setting_DefaultRadio_Backpack_west = "TFAR_rt1523g";
-force TFAR_setting_DefaultRadio_Personal_east = "TFAR_fadak";
-force TFAR_setting_DefaultRadio_Personal_Independent = "TFAR_anprc148jem";
-force TFAR_setting_DefaultRadio_Personal_West = "TFAR_anprc152";
-force TFAR_setting_DefaultRadio_Rifleman_East = "TFAR_pnr1000a";
-force TFAR_setting_DefaultRadio_Rifleman_Independent = "TFAR_anprc154";
-force TFAR_setting_DefaultRadio_Rifleman_West = "TFAR_rf7800str";
-force TFAR_setting_externalIntercomWirelessHeadgear = "";
-force TFAR_spectatorCanHearEnemyUnits = true;
-force TFAR_spectatorCanHearFriendlies = true;
-force TFAR_takingRadio = 2;
-force TFAR_Teamspeak_Channel_Name = "TaskForceRadio";
-force TFAR_Teamspeak_Channel_Password = "123";
-force tfar_terrain_interception_coefficient = 7;
-force TFAR_voiceCone = true;
-
 // TSB Assets
-radioAnims_cba_ads = false;
-radioAnims_cba_Earpieces = "[""G_WirelessEarpiece_F""]";
-radioAnims_cba_main = false;
-radioAnims_cba_preference_fadak = "Vest";
-radioAnims_cba_preference_Others = "Hand";
-radioAnims_cba_preference_pnr1000 = "Vest";
-radioAnims_cba_preference_PRC148 = "Hand";
-radioAnims_cba_preference_PRC152 = "Vest";
-radioAnims_cba_preference_PRC154 = "Hand";
-radioAnims_cba_preference_rf7800 = "Vest";
-radioAnims_cba_vehicles = false;
-radioAnims_cba_vestarmor = true;
-radioAnims_cba_vests = "[]";
 tsp_cba_animate_door = false;
 tsp_cba_animate_map = false;
 tsp_cba_animate_nvg = false;
@@ -1076,12 +1093,14 @@ zen_vision_enableWhiteHotRedCold = false;
 // Zeus Enhanced - Attributes
 zen_attributes_enableAbilities = true;
 zen_attributes_enableAmmo = true;
+zen_attributes_enableAmmoCargo = true;
 zen_attributes_enableArsenal = true;
 zen_attributes_enableBuildingMarker = true;
 zen_attributes_enableDamage = true;
 zen_attributes_enableEngine = true;
 zen_attributes_enableExecute = true;
 zen_attributes_enableFuel = true;
+zen_attributes_enableFuelCargo = true;
 zen_attributes_enableGarage = true;
 zen_attributes_enableGroupBehaviour = true;
 zen_attributes_enableGroupCombatMode = true;
@@ -1101,6 +1120,7 @@ zen_attributes_enableMarkerText = true;
 zen_attributes_enableName = true;
 zen_attributes_enablePlateNumber = true;
 zen_attributes_enableRank = true;
+zen_attributes_enableRepairCargo = true;
 zen_attributes_enableRespawnPosition = true;
 zen_attributes_enableRespawnVehicle = true;
 zen_attributes_enableSensors = true;
@@ -1125,7 +1145,7 @@ zen_faction_filter_0_Athena_OPF_T_F = true;
 zen_faction_filter_0_Atlas_OPF_T_F = true;
 zen_faction_filter_0_Atlas_OPF_V_wdl_F = true;
 zen_faction_filter_0_Atlas_OPF_W_F = true;
-zen_faction_filter_0_EdCat_GO_CSAT_Arctic = true;
+zen_faction_filter_0_EMP_Greystone_PMC_OPFOR = true;
 zen_faction_filter_0_OPF_A_F = true;
 zen_faction_filter_0_OPF_CD_F = true;
 zen_faction_filter_0_OPF_F = true;
@@ -1146,7 +1166,6 @@ zen_faction_filter_0_Revolucion_OPF_FRR_F = true;
 zen_faction_filter_0_Revolucion_OPF_PNB_F = true;
 zen_faction_filter_0_Revolucion_OPF_VZ_F = true;
 zen_faction_filter_0_TSB_Generic_R = true;
-zen_faction_filter_0_vtf_kf_O_KS = true;
 zen_faction_filter_1_Athena_BLU_G_F = true;
 zen_faction_filter_1_Atlas_BLU_A_ard_F = true;
 zen_faction_filter_1_Atlas_BLU_A_F = true;
@@ -1171,7 +1190,7 @@ zen_faction_filter_1_BLU_T_F = true;
 zen_faction_filter_1_BLU_TURA_lxWS = true;
 zen_faction_filter_1_BLU_UN_lxWS = true;
 zen_faction_filter_1_BLU_W_F = true;
-zen_faction_filter_1_EdCat_GO_NATO_Arctic = true;
+zen_faction_filter_1_EMP_Greystone_PMC = true;
 zen_faction_filter_1_Opf_BLU_P_F = true;
 zen_faction_filter_1_PUP_UMD_USMC = true;
 zen_faction_filter_1_PUP_UMW_USMC = true;
@@ -1180,8 +1199,6 @@ zen_faction_filter_1_Revolucion_BLU_CTRG_F = true;
 zen_faction_filter_1_Revolucion_BLU_FRR_F = true;
 zen_faction_filter_1_Revolucion_BLU_PNB_F = true;
 zen_faction_filter_1_TSB_Generic_B = true;
-zen_faction_filter_1_vtf_kf_B_KDF = true;
-zen_faction_filter_1_vtf_kf_B_KFL = true;
 zen_faction_filter_2_Atlas_IND_I_F = true;
 zen_faction_filter_2_Atlas_IND_UNO_F = true;
 zen_faction_filter_2_Atlas_IND_UNO_wdl_F = true;
@@ -1198,6 +1215,5 @@ zen_faction_filter_2_Opf_IND_I_F = true;
 zen_faction_filter_2_Revolucion_IND_CDB_F = true;
 zen_faction_filter_2_Revolucion_IND_FRR_F = true;
 zen_faction_filter_2_TSB_Generic_G = true;
-zen_faction_filter_2_vtf_kf_I_KAL = true;
 zen_faction_filter_3_CIV_F = true;
 zen_faction_filter_3_CIV_IDAP_F = true;
