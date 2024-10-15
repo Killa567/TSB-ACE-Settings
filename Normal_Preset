@@ -26,7 +26,6 @@ ace_advanced_throwing_showThrowArc = true;
 // ACE Advanced Vehicle Damage
 force ace_vehicle_damage_enableCarDamage = false;
 force ace_vehicle_damage_enabled = false;
-force ace_vehicle_damage_removeAmmoDuringCookoff = true;
 
 // ACE AI
 force ace_ai_assignNVG = true;
@@ -44,6 +43,10 @@ ace_arsenal_fontHeight = 4.5;
 ace_arsenal_loadoutsSaveFace = false;
 ace_arsenal_loadoutsSaveInsignia = true;
 ace_arsenal_loadoutsSaveVoice = false;
+
+// ACE Arsenal Extended
+aceax_setting_01 = 2;
+aceax_setting_02 = [0.3,0.8,0.2,1];
 
 // ACE Artillery
 force ace_artillerytables_advancedCorrections = false;
@@ -79,14 +82,15 @@ ace_common_settingFeedbackIcons = 1;
 ace_common_settingProgressBarLocation = 0;
 force ace_common_swayFactor = 1;
 
-// ACE Cook off
+// ACE Cook-off
 force ace_cookoff_ammoCookoffDuration = 1;
+ace_cookoff_cookoffDuration = 1;
 force ace_cookoff_destroyVehicleAfterCookoff = false;
-force ace_cookoff_enable = 0;
 force ace_cookoff_enableAmmobox = true;
 force ace_cookoff_enableAmmoCookoff = true;
 force ace_cookoff_enableFire = true;
 force ace_cookoff_probabilityCoef = 1;
+ace_cookoff_removeAmmoDuringCookoff = true;
 
 // ACE Crew Served Weapons
 force ace_csw_ammoHandling = 2;
@@ -137,10 +141,9 @@ acex_fortify_settingHint = 1;
 
 // ACE Fragmentation Simulation
 force ace_frag_enabled = true;
-force ace_frag_maxTrack = 10;
-force ace_frag_maxTrackPerFrame = 10;
 force ace_frag_reflectionsEnabled = false;
 force ace_frag_spallEnabled = false;
+ace_frag_spallIntensity = 1;
 
 // ACE G-Forces
 force ace_gforces_coef = 0;
@@ -162,7 +165,7 @@ force acex_headless_log = false;
 force acex_headless_transferLoadout = 0;
 
 // ACE Hearing
-force ace_hearing_autoAddEarplugsToUnits = false;
+force ace_hearing_autoAddEarplugsToUnits = 0;
 ace_hearing_disableEarRinging = false;
 force ace_hearing_earplugsVolume = 0.5;
 force ace_hearing_enableCombatDeafness = true;
@@ -171,11 +174,14 @@ force ace_hearing_unconsciousnessVolume = 0.4;
 
 // ACE Interaction
 force ace_interaction_disableNegativeRating = true;
+ace_interaction_enableAnimActions = true;
 force ace_interaction_enableGroupRenaming = true;
 ace_interaction_enableMagazinePassing = true;
 force ace_interaction_enableTeamManagement = true;
 ace_interaction_enableWeaponAttachments = true;
+ace_interaction_interactWithEnemyCrew = 0;
 force ace_interaction_interactWithTerrainObjects = true;
+ace_interaction_remoteTeamManagement = true;
 
 // ACE Interaction Menu
 ace_gestures_showOnInteractionMenu = 2;
@@ -200,6 +206,7 @@ ace_interact_menu_useListMenu = true;
 ace_interact_menu_useListMenuSelf = true;
 
 // ACE Kill Tracker
+ace_killtracker_showCrewKills = false;
 force ace_killtracker_trackAI = true;
 
 // ACE Logistics
@@ -215,6 +222,7 @@ force ace_rearm_enabled = true;
 force ace_rearm_level = 2;
 force ace_rearm_supply = 0;
 force ace_refuel_cargoRate = 10;
+ace_refuel_enabled = true;
 force ace_refuel_hoseLength = 36;
 force ace_refuel_progressDuration = 2;
 force ace_refuel_rate = 1;
@@ -289,7 +297,7 @@ force ace_medical_spontaneousWakeUpChance = 0.95;
 force ace_medical_spontaneousWakeUpEpinephrineBoost = 20;
 force ace_medical_statemachine_AIUnconsciousness = false;
 force ace_medical_statemachine_cardiacArrestBleedoutEnabled = true;
-force ace_medical_statemachine_cardiacArrestTime = 300;
+force ace_medical_statemachine_cardiacArrestTime = 600;
 force ace_medical_statemachine_fatalInjuriesAI = 0;
 force ace_medical_statemachine_fatalInjuriesPlayer = 1;
 force ace_medical_treatment_advancedBandages = 1;
@@ -477,6 +485,7 @@ force ace_scopes_deduceBarometricPressureFromTerrainAltitude = false;
 force ace_scopes_defaultZeroRange = 100;
 force ace_scopes_enabled = true;
 force ace_scopes_forceUseOfAdjustmentTurrets = false;
+ace_scopes_inScopeAdjustment = false;
 force ace_scopes_overwriteZeroRange = false;
 force ace_scopes_simplifiedZeroing = false;
 ace_scopes_useLegacyUI = false;
@@ -513,6 +522,8 @@ ace_fastroping_autoAddFRIES = false;
 force ace_fastroping_requireRopeItems = false;
 force ace_gunbag_swapGunbagEnabled = true;
 force ace_hitreactions_minDamageToTrigger = 0.1;
+ace_hitreactions_weaponDropChanceArmHitAI = 0;
+ace_hitreactions_weaponDropChanceArmHitPlayer = 0;
 ace_inventory_inventoryDisplaySize = 0;
 force ace_laser_dispersionCount = 2;
 force ace_laser_showLaserOnMap = 3;
@@ -521,7 +532,8 @@ force ace_microdagr_mapDataAvailable = 2;
 force ace_microdagr_waypointPrecision = 3;
 force ace_noradio_enabled = true;
 ace_optionsmenu_showNewsOnMainMenu = true;
-force ace_overpressure_distanceCoefficient = 1;
+ace_overpressure_backblastDistanceCoefficient = 1;
+ace_overpressure_overpressureDistanceCoefficient = 1;
 force ace_parachute_failureChance = 0;
 ace_parachute_hideAltimeter = false;
 ace_tagging_quickTag = 1;
@@ -575,6 +587,7 @@ MIRA_Vehicle_Medical_CacheInterval = 0.4;
 MIRA_Vehicle_Medical_EnableAVM = true;
 MIRA_Vehicle_Medical_EnableIncapacitated = false;
 MIRA_Vehicle_Medical_EnableStable = true;
+MIRA_Vehicle_Medical_EnableSupportKAT = true;
 MIRA_Vehicle_Medical_EnableUnstable = true;
 MIRA_Vehicle_Medical_Incapacitated_CanUnloadAll = true;
 MIRA_Vehicle_Medical_Incapacitated_ShowCount = false;
@@ -595,6 +608,8 @@ MIRA_Vehicle_Medical_Unstable_ShowCount = true;
 MIRA_Vehicle_Medical_Unstable_TakeDogtags = true;
 MIRA_Vehicle_Medical_Unstable_ThresholdLowBP = 80;
 MIRA_Vehicle_Medical_Unstable_ThresholdLowHR = 50;
+MIRA_Vehicle_Medical_Unstable_TrackAirwayBlocked = true;
+MIRA_Vehicle_Medical_Unstable_TrackAllPneumothorax = true;
 MIRA_Vehicle_Medical_Unstable_TrackBleeding = true;
 MIRA_Vehicle_Medical_Unstable_TrackCardiacArrest = true;
 MIRA_Vehicle_Medical_Unstable_TrackDead = true;
@@ -603,6 +618,7 @@ MIRA_Vehicle_Medical_Unstable_TrackLegFractures = true;
 MIRA_Vehicle_Medical_Unstable_TrackLegSplints = true;
 MIRA_Vehicle_Medical_Unstable_TrackLowBP = true;
 MIRA_Vehicle_Medical_Unstable_TrackLowHR = true;
+MIRA_Vehicle_Medical_Unstable_TrackSpO2 = true;
 MIRA_Vehicle_Medical_Unstable_TrackUnconscious = true;
 MIRA_Vehicle_Medical_Vehicles_EnableCar = true;
 MIRA_Vehicle_Medical_Vehicles_EnableHelicopter = true;
@@ -840,9 +856,11 @@ diwako_dui_namelist_text_shadow = 2;
 diwako_dui_namelist_width = 215;
 diwako_dui_radar_ace_finger = true;
 force diwako_dui_radar_ace_medic = true;
+diwako_dui_radar_always_show_unit_numbers = false;
 diwako_dui_radar_compassRangeCrew = 500;
 diwako_dui_radar_dir_padding = 25;
 diwako_dui_radar_dir_shadow = 2;
+diwako_dui_radar_enable_seat_icons = 2;
 diwako_dui_radar_group_by_vehicle = false;
 diwako_dui_radar_icon_opacity = 1;
 diwako_dui_radar_icon_opacity_no_player = true;
@@ -1051,7 +1069,6 @@ force kat_breathing_deterioratingPneumothorax_chance = 50;
 force kat_breathing_deterioratingPneumothorax_interval = 60;
 force kat_breathing_enable = true;
 force kat_breathing_enable_selfChestseal = 0;
-force kat_breathing_enableSPO2Flashing = true;
 force kat_breathing_Etco2_Enabled = true;
 force kat_breathing_Etco2_Units = 0;
 force kat_breathing_HPTXBleedAmount = 0.06;
@@ -1060,7 +1077,6 @@ force kat_breathing_inspectChest_enable = 2;
 force kat_breathing_inspectChest_medLvl = 0;
 force kat_breathing_inspectChest_time = 6;
 force kat_breathing_locationProvideOxygen = 3;
-force kat_breathing_lowSPO2Level = 90;
 force kat_breathing_medLvl_BVM = 1;
 force kat_breathing_medLvl_BVM_Oxygen = 1;
 force kat_breathing_medLvl_Chestseal = 0;
@@ -1157,9 +1173,16 @@ force kat_circulation_medLvl_AED_X = 1;
 force kat_circulation_tamponadeChance = 10;
 force kat_circulation_useLocation_AED = 0;
 
+// KAT - ADV Medical: Feedback
+kat_feedback_effectLowSpO2 = 90;
+kat_feedback_enableOpioidEffect = true;
+
 // KAT - ADV Medical: GUI
 force kat_gui_ColoredLogs = true;
 kat_gui_showPatientSideLabels = false;
+
+// KAT - ADV Medical: Hypothermia
+kat_hypothermia_hypothermiaActive = true;
 
 // KAT - ADV Medical: Misc
 kat_misc_AFAK_Container = 0;
@@ -1219,12 +1242,6 @@ force kat_pharma_carbonateChance = 100;
 force kat_pharma_CheckCoag_Location = 0;
 force kat_pharma_CheckCoag_MedLevel = 1;
 force kat_pharma_CheckCoag_TreatmentTime = 10;
-force kat_pharma_chromatic_aberration_checkbox_fentanyl = true;
-force kat_pharma_chromatic_aberration_checkbox_ketamine = true;
-force kat_pharma_chromatic_aberration_checkbox_pervitin = true;
-force kat_pharma_chromatic_aberration_slider_fentanyl = 1;
-force kat_pharma_chromatic_aberration_slider_ketamine = 0.8;
-force kat_pharma_chromatic_aberration_slider_pervitin = 1;
 force kat_pharma_coagulation = true;
 force kat_pharma_coagulation_allow_clot_text = true;
 force kat_pharma_coagulation_allow_EACA_script = true;
@@ -1248,6 +1265,7 @@ force kat_pharma_eacaClearTrauma = false;
 force kat_pharma_ivCheckLimbDamage = false;
 force kat_pharma_IVdrop = 600;
 force kat_pharma_IVdropEnable = true;
+kat_pharma_IVflowControl = false;
 force kat_pharma_IVreuse = true;
 force kat_pharma_keepScriptRunning_EACA = true;
 force kat_pharma_keepScriptRunning_TXA = true;
@@ -1336,6 +1354,14 @@ force kat_surgery_surgicalLocation = 3;
 force kat_surgery_ultrasound_MedLevel = 2;
 force kat_surgery_ultrasoundLocation = 3;
 force kat_surgery_ultrasoundTime = 8;
+
+// KAT - ADV Medical: Vitals
+kat_vitals_simpleMedical = false;
+
+// KAT - ADV Medical: Watch
+kat_watch_altitudeUnit = 0;
+kat_watch_pressureUnit = 0;
+kat_watch_temperatureUnit = 0;
 
 // KP Ranks
 force KPR_autoMode = false;
@@ -1438,6 +1464,7 @@ force RECOIL_randomMid_on = 1.1;
 force RECOIL_randomMin_on = -1;
 RECOIL_Smooth_on = true;
 force SWAY_incrase_on = 1;
+tsb_suppression = false;
 tsp_cba_animate_door = false;
 tsp_cba_animate_map = false;
 tsp_cba_animate_nvg = false;
@@ -1445,84 +1472,136 @@ tsp_cba_animate_nvg = false;
 // TSP Breach
 force tsp_cba_breach = true;
 force tsp_cba_breach_ace = true;
-force tsp_cba_breach_ace_locking = true;
 force tsp_cba_breach_ammo = "[""B_12Gauge_Slug_NoCartridge"", ""rhs_ammo_12g_slug"", ""rhs_ammo_12g_00buckshot""]";
-force tsp_cba_breach_ammoMultiplier = 1;
-force tsp_cba_breach_autoTime = 5;
-force tsp_cba_breach_lockBlacklist = "[]";
-force tsp_cba_breach_lockDoor = 0;
-force tsp_cba_breach_lockHouse = 0;
-force tsp_cba_breach_military = "[ 
-""Land_Budova4_in"", 
-""Land_Budova4"", 
-""Barrack2"", 
-""Land_Barrack2"", 
-""Land_MilOffices_V1_F"", 
-""Land_Mil_Barracks_L_EP1"", 
-""Land_Barrack2_EP1"", 
-""Land_Mil_Barracks_EP1"", 
-""Land_Mil_Barracks_no_interior_EP1_CUP"", 
-""Land_Mil_Barracks_i_EP1"", 
-""Land_Mil_Barracks_L"", 
-""Land_Mil_Barracks_no_interior_CUP"", 
-""Land_Mil_Barracks_i"", 
-""Land_Mil_Barracks"", 
-""Land_GuardHouse_02_F"", 
-""Land_Mil_Guardhouse_EP1"", 
-""Land_Mil_Guardhouse"", 
-""Land_Mil_Guardhouse_no_interior_CUP"", 
-""Land_GuardHouse_02_grey_F"", 
-""Land_Barracks_03_F"", 
-""Land_Barracks_05_F"", 
-""Land_Barracks_02_F"", 
-""Land_Barracks_04_F"", 
-""Land_ControlTower_02_F"", 
-""Land_Mil_Guardhouse_no_interior_EP1_CUP"", 
-""Land_Radar_01_HQ_F"", 
-""Land_i_Barracks_V2_F"", 
-""Land_i_Barracks_V1_F"", 
-""Land_u_Barracks_V2_F"", 
-""Land_Barracks_06_F"", 
-""Land_Mil_House_dam_EP1"", 
-""Land_Barracks_01_grey_F"", 
-""Land_Barracks_01_dilapidated_F"", 
-""Land_Mil_House_EP1"", 
-""Land_Army_hut2_int"", 
-""Land_Barracks_01_camo_F"", 
-""Land_Army_hut_int"", 
-""Land_Army_hut3_long"", 
-""Land_Army_hut2"", 
-""Land_Army_hut3_long_int"" 
+tsp_cba_breach_ammo_multiplier = 1;
+tsp_cba_breach_auto = 5;
+tsp_cba_breach_break = true;
+tsp_cba_breach_lock_blacklist = "[]";
+tsp_cba_breach_lock_door = 0.75;
+tsp_cba_breach_lock_house = 0.25;
+tsp_cba_breach_lockpick = "[0,0.75,0.5,0.05]";
+force tsp_cba_breach_military = "[    
+""Land_Budova4_in"",    
+""Land_Budova4"",    
+""Barrack2"",    
+""Land_Barrack2"",    
+""Land_MilOffices_V1_F"",    
+""Land_Mil_Barracks_L_EP1"",    
+""Land_Barrack2_EP1"",    
+""Land_Mil_Barracks_EP1"",    
+""Land_Mil_Barracks_no_interior_EP1_CUP"",    
+""Land_Mil_Barracks_i_EP1"",    
+""Land_Mil_Barracks_L"",    
+""Land_Mil_Barracks_no_interior_CUP"",    
+""Land_Mil_Barracks_i"",    
+""Land_Mil_Barracks"",    
+""Land_GuardHouse_02_F"",    
+""Land_Mil_Guardhouse_EP1"",    
+""Land_Mil_Guardhouse"",    
+""Land_Mil_Guardhouse_no_interior_CUP"",    
+""Land_GuardHouse_02_grey_F"",    
+""Land_Barracks_03_F"",    
+""Land_Barracks_05_F"",    
+""Land_Barracks_02_F"",    
+""Land_Barracks_04_F"",    
+""Land_ControlTower_02_F"",    
+""Land_Mil_Guardhouse_no_interior_EP1_CUP"",    
+""Land_Radar_01_HQ_F"",    
+""Land_i_Barracks_V2_F"",    
+""Land_i_Barracks_V1_F"",    
+""Land_u_Barracks_V2_F"",    
+""Land_Barracks_06_F"",    
+""Land_Mil_House_dam_EP1"",    
+""Land_Barracks_01_grey_F"",    
+""Land_Barracks_01_dilapidated_F"",    
+""Land_Mil_House_EP1"",    
+""Land_Army_hut2_int"",    
+""Land_Barracks_01_camo_F"",    
+""Land_Army_hut_int"",    
+""Land_Army_hut3_long"",    
+""Land_Army_hut2"",    
+""Land_Army_hut3_long_int""    
 ]";
-force tsp_cba_breach_reinforced = "[ 
-""Land_Ammostore2"", 
-""Land_Garaz_s_tankem"", 
-""Land_Garaz_bez_tanku"", 
-""Land_Cargo_House_V4_F"", 
-""Land_Cargo_Tower_V1_F"", 
-""Land_Cargo_HQ_V4_F"", 
-""Land_Cargo_Tower_V1_No4_F"", 
-""Land_Cargo_Tower_V1_No5_F"", 
-""Land_Cargo_Tower_V1_No7_F"", 
-""Land_Cargo_Tower_V4_F"", 
-""Land_Cargo_Tower_V1_No2_F"", 
-""Land_Cargo_Tower_V2_F"", 
-""Land_Cargo_Tower_V3_F"", 
-""Land_Cargo_Tower_V1_No1_F"", 
-""Land_Cargo_Tower_V1_No3_F"", 
-""Land_Cargo_HQ_V2_F"", 
-""Land_Medevac_HQ_V1_F"", 
-""Land_Cargo_HQ_V1_F"", 
-""Land_Cargo_House_V2_F"", 
-""Land_Medevac_house_V1_F"", 
-""Land_Cargo_Tower_V1_No6_F"", 
-""Land_Cargo_House_V1_F"", 
-""Land_Cargo_HQ_V3_F"", 
-""Land_Cargo_House_V3_F"" 
+tsp_cba_breach_paperclip = "[0,0.5,0.25,0.15]";
+tsp_cba_breach_picking_time = 20;
+force tsp_cba_breach_reinforced = "[    
+""Land_Ammostore2"",    
+""Land_Garaz_s_tankem"",    
+""Land_Garaz_bez_tanku"",    
+""Land_Cargo_House_V4_F"",    
+""Land_Cargo_Tower_V1_F"",    
+""Land_Cargo_HQ_V4_F"",    
+""Land_Cargo_Tower_V1_No4_F"",    
+""Land_Cargo_Tower_V1_No5_F"",    
+""Land_Cargo_Tower_V1_No7_F"",    
+""Land_Cargo_Tower_V4_F"",    
+""Land_Cargo_Tower_V1_No2_F"",    
+""Land_Cargo_Tower_V2_F"",    
+""Land_Cargo_Tower_V3_F"",    
+""Land_Cargo_Tower_V1_No1_F"",    
+""Land_Cargo_Tower_V1_No3_F"",    
+""Land_Cargo_HQ_V2_F"",    
+""Land_Medevac_HQ_V1_F"",    
+""Land_Cargo_HQ_V1_F"",    
+""Land_Cargo_House_V2_F"",    
+""Land_Medevac_house_V1_F"",    
+""Land_Cargo_Tower_V1_No6_F"",    
+""Land_Cargo_House_V1_F"",    
+""Land_Cargo_HQ_V3_F"",    
+""Land_Cargo_House_V3_F""    
 ]";
+tsp_cba_breach_shock = 240;
 force tsp_cba_breach_vanilla = false;
-force tsp_cba_breach_wall_physics = true;
-force tsp_cba_breach_wall_velocity = "[0,0,-0.5]";
+tsp_cba_breach_walls = "[  
+[""AHHH"", ""Land_BrickWall_04_l_5m_F"",""Land_BrickWall_04_l_5m_d_F""],  
+[""AHHH"", ""Land_BrickWall_03_l_5m_v2_F"",""Land_BrickWall_03_l_5m_v2_d_F""],  
+[""AHHH"", ""Land_BrickWall_03_l_5m_v1_F"",""Land_BrickWall_03_l_5m_v2_d_F""],  
+[""AHHH"", ""Land_BrickWall_02_l_5m_F"",""Land_BrickWall_02_l_5m_d_F""],  
+[""AHHH"", ""Land_BrickWall_01_l_5m_F"",""Land_BrickWall_01_l_5m_d_F""],  
+[""AHHH"", ""Land_Stone_8m_F"",""Land_Stone_8mD_F""],  
+[""AHHH"", ""Land_WallCity_01_8m_yellow_F"",""Land_WallCity_01_8m_dmg_yellow_F""],  
+[""AHHH"", ""Land_City_8m_F"",""Land_City_8mD_F""],  
+[""AHHH"", ""Land_WallCity_01_8m_whiteblue_F"",""Land_WallCity_01_8m_dmg_whiteblue_F""],  
+[""AHHH"", ""Land_WallCity_01_8m_blue_F"",""Land_WallCity_01_8m_dmg_blue_F""],  
+[""AHHH"", ""Land_WallCity_01_8m_grey_F"",""Land_WallCity_01_8m_dmg_grey_F""],  
+[""AHHH"", ""Land_WallCity_01_8m_pink_F"",""Land_WallCity_01_8m_dmg_pink_F""],  
+[""AHHH"", ""Land_SilageWall_01_l_5m_F"",""Land_SilageWall_01_l_d_F""],  
+[""AHHH"", ""Land_ConcreteWall_02_m_8m_F"",""Land_ConcreteWall_02_m_d_F""],  
+[""AHHH"", ""Land_ConcreteWall_01_m_4m_F"",""Land_ConcreteWall_01_m_d_F""],  
+[""AHHH"", ""Land_ConcreteWall_01_m_8m_F"",""Land_ConcreteWall_01_m_d_F""],  
+[""AHHH"", ""Land_PipeFence_01_m_8m_F"",""Land_PipeFence_01_m_d_F""],  
+[""AHHH"", ""Land_City2_8m_F"",""Land_City2_8mD_F""],  
+[""AHHH"", ""Land_Wall_IndCnc_4_F"",""Land_Wall_IndCnc_End_2_F""],  
+[""AHHH"", ""Land_CamoConcreteWall_01_l_4m_v1_F"",""Land_CamoConcreteWall_01_l_end_v1_F""],  
+[""AHHH"", ""Land_Mil_WallBig_4m_F"",""Land_Mil_WallBig_4m_damaged_center_F""],  
+[""mil_wallbig_4m_battered_f"", ""Land_Mil_WallBig_4m_battered_F"",""Land_Mil_WallBig_4m_damaged_right_F""],  
+[""AHHH"", ""Land_Mil_WallBig_Corner_F"",""Land_Mil_WallBig_debris_F""],  
+[""AHHH"", ""Land_Mil_WallBig_corner_battered_F"",""Land_Mil_WallBig_debris_F""]  
+]";
+tsp_cba_flashbang_brightness = 1;
+tsp_cba_flashbang_distance = 10;
+tsp_cba_flashbang_fire = true;
+tsp_cba_flashbang_friends = 0.1;
+tsp_cba_flashbang_intensity = 1;
+tsp_cba_flashbang_smoke = true;
+tsp_cba_flashbang_sparks = true;
+tsp_cba_flashbang_spray = 0.4;
+tsp_cba_flashbang_surrender = 0.1;
+
+// TSP Core
+tsp_cba_angle = -0.1;
+tsp_cba_core_chvd = false;
+tsp_cba_core_pause = false;
+tsp_cba_hint = "Subtitle";
+tsp_cba_hint_distance = 20;
+tsp_param_faction = false;
+
+// TSP Melee
+tsp_cba_melee = true;
+tsp_cba_melee_damage = 1;
+tsp_cba_melee_disarm = 1;
+tsp_cba_melee_speed = 15;
+tsp_cba_melee_stamina = 1;
 
 // UH-60M
 force vtx_ace_viv_loadDistance = 15;
@@ -1957,3 +2036,4 @@ zeus_keybinds_main_alwaysForceDelete = true;
 zeus_keybinds_main_enableHealCrew = true;
 zeus_keybinds_main_enableKeybindErrorUI = true;
 zeus_keybinds_main_enableKeybindUI = true;
+zeus_keybinds_main_preferredGarrison = 1;
