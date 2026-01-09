@@ -1056,13 +1056,15 @@ force kat_airway_RecoveryPosition_Time = 6;
 force kat_airway_RecoveryPosition_TimeToDrain = 10;
 force kat_airway_ReusableAirwayItems = true;
 force kat_airway_string_exit = "";
-force kat_airway_Suction_reuse = true;
+force kat_airway_Suction_reuse = false;
 force kat_airway_Suction_time = 12;
 
 // KAT - ADV Medical: Breathing
 force kat_breathing_advPtxChance = 50;
 force kat_breathing_advPtxEnable = true;
 force kat_breathing_arrestPneumothorax_interval = 30;
+kat_breathing_availOxyHelmet = "'H_PilotHelmetFighter_B', 'H_PilotHelmetFighter_O', 'H_PilotHelmetFighter_I', 'H_PilotHelmetFighter_I_E'";
+kat_breathing_availOxyMask = "'kat_mask_solr'";
 force kat_breathing_BVMOxygen_Multiplier = 2.5;
 force kat_breathing_clearChestSealAfterTreatment = false;
 force kat_breathing_deepPenetratingInjuryChance = 30;
@@ -1070,6 +1072,7 @@ force kat_breathing_deterioratingPneumothorax_chance = 50;
 force kat_breathing_deterioratingPneumothorax_interval = 60;
 force kat_breathing_enable = true;
 force kat_breathing_enable_selfChestseal = 0;
+kat_breathing_enableCheckBreathing = true;
 force kat_breathing_Etco2_Enabled = true;
 force kat_breathing_Etco2_Units = 0;
 force kat_breathing_HPTXBleedAmount = 0.06;
@@ -1082,11 +1085,12 @@ force kat_breathing_medLvl_BVM = 1;
 force kat_breathing_medLvl_BVM_Oxygen = 1;
 force kat_breathing_medLvl_Chestseal = 0;
 force kat_breathing_medLvl_hemopneumothoraxTreatment = 1;
-force kat_breathing_medLvl_NasalCannula = 0;
+force kat_breathing_medLvl_NasalCannula = 1;
 force kat_breathing_medLvl_PocketBVM = 1;
 force kat_breathing_medLvl_Pulseoximeter = 0;
 force kat_breathing_mildValue = 75;
 force kat_breathing_NasalCannula_time = 3;
+kat_breathing_paco2Active = false;
 force kat_breathing_PneumothoraxAlwaysVisible = true;
 force kat_breathing_PneumothoraxArrest = true;
 force kat_breathing_pneumothoraxChance = 35;
@@ -1114,12 +1118,16 @@ kat_breathing_stethoscopeSoundVolume = 2;
 force kat_breathing_TensionHemothoraxAlwaysVisible = true;
 
 // KAT - ADV Medical: Chemical
-force force kat_chemical_affectAI = false;
 force kat_chemical_availGasmask = "'G_AirPurifyingRespirator_01_F', 'kat_mask_M50', 'kat_mask_M04'";
 force kat_chemical_gasmask_durability = 3600;
+kat_chemical_gasMaskSoundVolume = 1;
 force kat_chemical_infectionTime = 60;
+force kat_chemical_maskStaminaLoss = false;
+kat_chemical_showPoisoning = true;
+kat_chemical_tearGasDropChance = 0;
 
 // KAT - ADV Medical: Circulation
+kat_circulation_abgEnable = false;
 force kat_circulation_AdvRhythm = true;
 force kat_circulation_AdvRhythm_AED_ROSC_Chance = 50;
 force kat_circulation_AdvRhythm_asystoleBloodlossThreshold = 3.6;
@@ -1130,7 +1138,9 @@ force kat_circulation_AdvRhythm_deteriorateTimeMax = 900;
 force kat_circulation_AdvRhythm_deteriorateTimeWeight = 180;
 force kat_circulation_AdvRhythm_Hardcore_Enable = false;
 force kat_circulation_AdvRhythm_hardcoreDeteriorationChance = 10;
+kat_circulation_AdvRhythm_HTHold = false;
 force kat_circulation_AdvRhythm_PEAChance = 50;
+force kat_circulation_AdvRhythm_PEAEnabled = true;
 force kat_circulation_AdvRhythm_VTChance = 50;
 force kat_circulation_AED_duringCpr = true;
 force kat_circulation_AED_MaxChance = 80;
@@ -1168,10 +1178,15 @@ force kat_circulation_deterioratingTamponade_interval = 60;
 force kat_circulation_enable = true;
 force kat_circulation_enable_CPR_Chances = true;
 force kat_circulation_enable_selfBloodDraw = 1;
+kat_circulation_hardcoreDiagnose = false;
 force kat_circulation_medLvl_AED = 1;
 force kat_circulation_medLvl_AED_Station_Interact = 1;
 force kat_circulation_medLvl_AED_X = 1;
+force kat_circulation_medLvl_BPCuff = 1;
+force kat_circulation_medLvl_StethHR = 1;
 force kat_circulation_tamponadeChance = 10;
+kat_circulation_treatmentTime_BPCuff = 12;
+kat_circulation_treatmentTime_StethHR = 8;
 force kat_circulation_useLocation_AED = 0;
 
 // KAT - ADV Medical: Feedback
@@ -1233,11 +1248,21 @@ force kat_misc_tourniquetEffects_NegativeMultiplier = 1;
 force kat_misc_tourniquetEffects_PositiveMultiplier = 1;
 force kat_misc_treatmentTimeDetachTourniquet = 7;
 
+// KAT - ADV Medical: Ophthalmology
+force kat_ophthalmology_enable = true;
+kat_ophthalmology_eyeshield_medic_required = 0;
+kat_ophthalmology_eyeshield_treatment_time = 2;
+kat_ophthalmology_eyewash_medic_required = 0;
+kat_ophthalmology_eyewash_treatment_time = 2;
+force kat_ophthalmology_probability_dust = 5;
+force kat_ophthalmology_probability_dust_heavy = 1;
+force kat_ophthalmology_probability_treatment_dust = 20;
+
 // KAT - ADV Medical: Pharmacy
 force kat_pharma_allowStackScript_EACA = true;
 force kat_pharma_allowStackScript_TXA = true;
 force kat_pharma_bandageCycleTime_EACA = 8;
-force kat_pharma_bandageCycleTime_TXA = 5;
+force kat_pharma_bandageCycleTime_TXA = 8;
 force kat_pharma_blockChance = 0;
 force kat_pharma_carbonateChance = 100;
 force kat_pharma_CheckCoag_Location = 0;
@@ -1267,16 +1292,18 @@ force kat_pharma_ivCheckLimbDamage = false;
 force kat_pharma_IVdrop = 600;
 force kat_pharma_IVdropEnable = true;
 force kat_pharma_IVflowControl = false;
-force kat_pharma_IVreuse = true;
+force kat_pharma_IVreuse = false;
 force kat_pharma_keepScriptRunning_EACA = true;
 force kat_pharma_keepScriptRunning_TXA = true;
-force force kat_pharma_kidneyAction = false;
+force kat_pharma_kidneyAction = false;
 force kat_pharma_MedicationsRequireInsIV = true;
 force kat_pharma_medLvl_Amiodarone = 1;
 force kat_pharma_medLvl_ApplyIO = 1;
 force kat_pharma_medLvl_ApplyIV = 1;
 force kat_pharma_medLvl_Atropine = 0;
+kat_pharma_medLvl_Caffeine = 0;
 force kat_pharma_medLvl_Carbonate = 0;
+kat_pharma_medLvl_CWMP = 0;
 force kat_pharma_medLvl_EACA = 1;
 force kat_pharma_medLvl_EpinephrineIV = 1;
 force kat_pharma_medLvl_Etomidate = 1;
@@ -1305,7 +1332,9 @@ force kat_pharma_treatmentTime_Amiodarone = 7;
 force kat_pharma_treatmentTime_ApplyIO = 7;
 force kat_pharma_treatmentTime_ApplyIV = 7;
 force kat_pharma_treatmentTime_Atropine = 7;
+kat_pharma_treatmentTime_Caffeine = 7;
 force kat_pharma_treatmentTime_Carbonate = 7;
+kat_pharma_treatmentTime_CWMP = 7;
 force kat_pharma_treatmentTime_EACA = 7;
 force kat_pharma_treatmentTime_EpinephrineIV = 7;
 force kat_pharma_treatmentTime_Etomidate = 2;
@@ -1331,15 +1360,14 @@ force kat_surgery_closedReduction_MedLevel = 2;
 force kat_surgery_closedReductionFailChance = 10;
 force kat_surgery_closedTime = 10;
 force kat_surgery_compoundChance = 30;
-force force kat_surgery_enable_fracture = false;
+force kat_surgery_enable_fracture = false;
 force kat_surgery_enable_selfCheckFracture = 1;
-force kat_surgery_etomidateTime = 45;
 force kat_surgery_fractureCheck_MedLevel = 0;
 force kat_surgery_fractureCheck_Time = 10;
 force kat_surgery_incisionTime = 10;
 force kat_surgery_intermediateTime = 8;
 force kat_surgery_npwt_MedLevel = 2;
-force kat_surgery_npwtLocation = 0;
+force kat_surgery_npwtLocation = 3;
 force kat_surgery_npwtTime = 5;
 force kat_surgery_openTime = 15;
 force kat_surgery_pericardialtap_MedLevel = 2;
@@ -1357,12 +1385,16 @@ force kat_surgery_ultrasoundLocation = 3;
 force kat_surgery_ultrasoundTime = 8;
 
 // KAT - ADV Medical: Vitals
-force kat_vitals_simpleMedical = false;
+kat_vitals_basicDiagnosticTime = 15;
+kat_vitals_enableBasicDiagnostic = false;
+kat_vitals_enableFluidShift = true;
+kat_vitals_enableSimpleMedical = false;
 
 // KAT - ADV Medical: Watch
 kat_watch_altitudeUnit = 0;
 kat_watch_pressureUnit = 0;
 kat_watch_temperatureUnit = 0;
+kat_watch_watchInaccuracy = false;
 
 // KP Ranks
 force KPR_autoMode = false;
